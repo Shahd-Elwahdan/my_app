@@ -235,7 +235,7 @@ class _product_info_bodyState extends State<product_info_body> {
     );
   }
 }
-// Function to build purchase option boxes
+
 Widget buildOptionBox(String title, String price) {
   return Container(
     padding: EdgeInsets.symmetric(vertical: 10.h, horizontal: 15.w),
@@ -256,7 +256,6 @@ Widget buildOptionBox(String title, String price) {
   );
 }
 
-// Function to build review section
 Widget buildReview(String name, String comment) {
   return Column(
     crossAxisAlignment: CrossAxisAlignment.end,
