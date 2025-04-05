@@ -216,10 +216,10 @@ class ProductListView extends StatelessWidget {
                         width: 90.w,
                         decoration: BoxDecoration(
                           border: Border.all(
-                            color: Color(0xFF1D75B1), // Border color
+                            color: Color(0xFF1D75B1), 
                             width: .8.w, // Border width
                           ),
-                          borderRadius: BorderRadius.circular(12.r), // Optional: Rounded corners
+                          borderRadius: BorderRadius.circular(12.r), 
                         ),
                         child:Row(
                           children: [
