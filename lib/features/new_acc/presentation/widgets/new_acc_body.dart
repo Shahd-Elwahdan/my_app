@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_bloc/flutter_bloc.dart'; // Import Bloc
+import 'package:flutter_bloc/flutter_bloc.dart'; 
 import 'package:google_fonts/google_fonts.dart';
 import 'package:myapp/features/Code/presentation/code2_view.dart';
 import 'package:myapp/features/Code/presentation/code_view.dart';
 import 'package:myapp/features/Login/presentation/Login_view.dart';
-import 'package:myapp/manage/services/services.dart'; // Import your ApiService
-import 'package:myapp/manage/cubit/sign_up_cubit.dart'; // Import SignupCubit
+import 'package:myapp/manage/services/services.dart'; 
+import 'package:myapp/manage/cubit/sign_up_cubit.dart'; 
 import 'package:myapp/manage/cubit/sign_up_state.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';// Import SignupState
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 class new_acc_body extends StatefulWidget {
   const new_acc_body({Key? key}) : super(key: key);
 
@@ -142,7 +142,7 @@ class _new_acc_bodyState extends State<new_acc_body> {
 
                 SizedBox(height: 170.h),
 
-                // Signup Option
+               
                 Text(
                   textAlign: TextAlign.center,
                   "لديك حساب بالفعل ؟",
