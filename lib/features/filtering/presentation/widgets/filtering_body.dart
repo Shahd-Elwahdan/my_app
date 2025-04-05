@@ -10,7 +10,7 @@ class filtering_body extends StatefulWidget {
 }
 
 class _filtering_bodyState extends State<filtering_body> {
-  // Brand filter states
+ 
   Map<String, bool> brandFilters = {
     'assets/img_7.png': false,
     'assets/img_7.png': false,
@@ -28,7 +28,7 @@ class _filtering_bodyState extends State<filtering_body> {
 
   };
 
-  // Sorting filters
+
   String? selectedPrice = "low_to_high";
   Map<String, bool> ratingFilters = {
     "high_to_low": false,
@@ -72,7 +72,7 @@ class _filtering_bodyState extends State<filtering_body> {
             ),
             SizedBox(height: 10.h),
 
-            // Filter by Brand
+           
             Text(
               'فلترة حسب النوع',
               style: GoogleFonts.almarai(
@@ -128,7 +128,7 @@ class _filtering_bodyState extends State<filtering_body> {
             ),
 
             Divider(thickness: 1.3, height: 20.h),
-            // NEW: Filter by Sales
+            
             Text(
               'حسب المبيعات',
               style: GoogleFonts.almarai(
@@ -140,7 +140,7 @@ class _filtering_bodyState extends State<filtering_body> {
             SizedBox(height: 8.h),
             _buildSalesCheckbox("المنتجات الأكثر مبيعاً"),
             Divider(thickness: 1.3, height: 20.h),
-            // Filter by Price
+            
             Text(
               'حسب السعر',
               style: GoogleFonts.almarai(
@@ -159,7 +159,7 @@ class _filtering_bodyState extends State<filtering_body> {
             ),
 
             Divider(thickness: 1.3, height: 20.h),
-            // Filter by Rating
+           
             Text(
               'حسب التقييم',
               style: GoogleFonts.almarai(
@@ -183,7 +183,7 @@ class _filtering_bodyState extends State<filtering_body> {
             ),
 
             SizedBox(height: 20.h),
-            // Filter Button
+            
             SizedBox(
               width: double.infinity,
               child: ElevatedButton(
@@ -214,7 +214,7 @@ class _filtering_bodyState extends State<filtering_body> {
     );
   }
 
-  // Checkbox for Sales Sorting
+  
   Widget _buildSalesCheckbox(String title) {
     return Row(
       children: [
@@ -243,7 +243,7 @@ class _filtering_bodyState extends State<filtering_body> {
       ],
     );
   }
-  // Checkbox for price sorting
+
 
   Widget _buildCheckbox(String title, String value) {
     return Row(
@@ -268,7 +268,7 @@ class _filtering_bodyState extends State<filtering_body> {
     );
   }
 
-  // Checkbox for rating sorting
+
   Widget _buildRatingCheckbox(String title, String key) {
     return Row(
       children: [
