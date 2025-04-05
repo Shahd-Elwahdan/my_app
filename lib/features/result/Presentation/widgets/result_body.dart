@@ -106,9 +106,9 @@ class result_body extends StatelessWidget {
                               decoration: BoxDecoration(
                                 border: Border.all(
                                   color: Color(0xFF1D75B1), // Border color
-                                  width: .8.w, // Border width
+                                  width: .8.w, 
                                 ),
-                                borderRadius: BorderRadius.circular(12.r), // Optional: Rounded corners
+                                borderRadius: BorderRadius.circular(12.r), 
                               ),
                               child: Row(
                                 children: [
