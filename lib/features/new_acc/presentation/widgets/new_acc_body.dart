@@ -24,13 +24,13 @@ class _new_acc_bodyState extends State<new_acc_body> {
       body: BlocConsumer<SignupCubit, SignupState>(
         listener: (context, state) {
           if (state is SignupSuccess) {
-            // OTP sent successfully, navigate to the OTP verification screen
+            
             Navigator.push(
               context,
               MaterialPageRoute(builder: (context) => const code2_view()),
             );
           } else if (state is SignupFailure) {
-            // Show an error message if OTP sending fails
+           
             ScaffoldMessenger.of(context).showSnackBar(
               SnackBar(content: Text(state.error)),
             );
@@ -69,7 +69,7 @@ class _new_acc_bodyState extends State<new_acc_body> {
                 ),
                 SizedBox(height: 35.h),
 
-                // Email Input
+                
                 Container(
                   width: 340.w,
                   height: 60.h,
@@ -111,10 +111,10 @@ class _new_acc_bodyState extends State<new_acc_body> {
                   child: ElevatedButton(
                     onPressed: () {
                       if (emailController.text.isNotEmpty) {
-                        // Call the Signup API to send OTP when the button is pressed
+                       
                         context.read<SignupCubit>().sendOtp(emailController.text);
                       } else {
-                        // Show error message if email is empty
+                       
                         ScaffoldMessenger.of(context).showSnackBar(
                           SnackBar(content: Text("الرجاء إدخال البريد الإلكتروني")),
                         );
@@ -166,7 +166,7 @@ class _new_acc_bodyState extends State<new_acc_body> {
                             padding: EdgeInsets.zero,
                             constraints: BoxConstraints(),
                             onPressed: () {
-                              // Add signup navigation here
+                              
                             },
                           ),
                           Text(
