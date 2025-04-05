@@ -16,7 +16,7 @@ class products_list_body extends StatelessWidget {
         backgroundColor: Colors.white,
         elevation: 0,
         leading: IconButton(
-          icon: const Icon(Icons.filter_alt_outlined, color: Colors.black,), // Filter icon
+          icon: const Icon(Icons.filter_alt_outlined, color: Colors.black,), 
           onPressed: () {
             Navigator.push(
                 context,
@@ -112,10 +112,10 @@ class products_list_body extends StatelessWidget {
                           width: 90.w,
                           decoration: BoxDecoration(
                             border: Border.all(
-                              color: Color(0xFF1D75B1), // Border color
-                              width: .8.w, // Border width
+                              color: Color(0xFF1D75B1), 
+                              width: .8.w, 
                             ),
-                            borderRadius: BorderRadius.circular(12.r), // Optional: Rounded corners
+                            borderRadius: BorderRadius.circular(12.r), 
                           ),
                           child: Row(
                             children: [
