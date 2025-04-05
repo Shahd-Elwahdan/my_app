@@ -64,7 +64,7 @@ class ApiService {
   }
   Future<Response> sendOtp(String email) async {
     try {
-      Response response = await _dio.post('$baseUrl/api/register', data: {'email': email});  // Updated path
+      Response response = await _dio.post('$baseUrl/api/register', data: {'email': email});  
       return response;
     } catch (e) {
       print('Error in sending OTP: $e');
