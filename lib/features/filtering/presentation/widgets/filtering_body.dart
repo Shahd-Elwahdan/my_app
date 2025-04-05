@@ -50,7 +50,6 @@ class _filtering_bodyState extends State<filtering_body> {
           mainAxisSize: MainAxisSize.min,
           children: [
 
-            // Header
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
