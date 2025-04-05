@@ -173,20 +173,20 @@ class _Login_bodyState extends State<Login_body> {
             SizedBox(height: 15.h),
             GestureDetector(
               child: Container(
-                width: 340.w, // Match other containers' width
+                width: 340.w, 
                 child: Row(
                   mainAxisAlignment:
-                      MainAxisAlignment.center, // Center horizontally
+                      MainAxisAlignment.center,
                   children: [
                     IconButton(
                       icon:
-                      Icon(Icons.arrow_back), // Using arrow_back for better RTL
+                      Icon(Icons.arrow_back), 
                       iconSize: 20.w,
                       color: const Color(0xFF1D75B1),
-                      padding: EdgeInsets.zero, // Removes default padding
-                      constraints: BoxConstraints(), // Removes minimum size constraints
+                      padding: EdgeInsets.zero, 
+                      constraints: BoxConstraints(), 
                       onPressed: () {
-                        // Add your signup navigation here
+                        
                       },
                     ),
                     Text(
@@ -195,7 +195,7 @@ class _Login_bodyState extends State<Login_body> {
                       style: GoogleFonts.almarai(
                         fontSize: 18.sp,
                         fontWeight: FontWeight.w700,
-                        color: Color(0xFF1D75B1), // Blue color to match design
+                        color: Color(0xFF1D75B1),
                       ),
                 ),
 
