@@ -82,7 +82,7 @@ class _info_bodyState extends State<info_body> {
     );
   }
 
-  // Common Input Field Widget
+  
   Widget buildInputField(String hintText, {TextInputType keyboardType = TextInputType.text}) {
     return Container(
       width: 340.w,
@@ -108,7 +108,7 @@ class _info_bodyState extends State<info_body> {
     );
   }
 
-  // Password Input Field Widget
+  
   Widget buildPasswordField(String hintText, bool isPassword) {
     return Container(
       width: 340.w,
