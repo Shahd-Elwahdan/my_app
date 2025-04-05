@@ -1,15 +1,15 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_bloc/flutter_bloc.dart'; // BlocConsumer
-import 'package:myapp/features/splash/presentation/splash_view.dart'; // Splash View
-import 'package:myapp/Responsive.dart'; // Responsive
-import 'package:myapp/manage/services/services.dart'; // ApiService
-import 'package:myapp/manage/cubit/sign_up_cubit.dart'; // SignupCubit
-import 'package:myapp/features/login/presentation/Login_view.dart'; // Login View
-import 'package:myapp/features/new_acc/presentation/widgets/new_acc_body.dart'; // Your Signup Widget
+import 'package:flutter_bloc/flutter_bloc.dart'; 
+import 'package:myapp/features/splash/presentation/splash_view.dart'; 
+import 'package:myapp/Responsive.dart'; 
+import 'package:myapp/manage/services/services.dart'; 
+import 'package:myapp/manage/cubit/sign_up_cubit.dart';
+import 'package:myapp/features/login/presentation/Login_view.dart'; 
+import 'package:myapp/features/new_acc/presentation/widgets/new_acc_body.dart'; 
 
 void main() {
   runApp(
-    Responsive.init( // Ensures screen responsiveness
+    Responsive.init( 
       child: const MyApp(),
     ),
   );
@@ -21,7 +21,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return BlocProvider(
-      create: (context) => SignupCubit(ApiService()), // Providing SignupCubit here
+      create: (context) => SignupCubit(ApiService()), 
       child: MaterialApp(
         debugShowCheckedModeBanner: false,
         theme: ThemeData(primarySwatch: Colors.blue),
@@ -37,7 +37,7 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const Scaffold(
-      body: SplashView(), // This is where you initially show the SplashView
+      body: SplashView(), 
     );
   }
 }
