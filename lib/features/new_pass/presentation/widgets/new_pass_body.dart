@@ -54,7 +54,7 @@ class _new_pass_bodyState extends State<new_pass_body> {
             ),
             const SizedBox(height: 85),
 
-            // Email Input
+           
             Container(
               width: 340.w,
               height: 60.h,
