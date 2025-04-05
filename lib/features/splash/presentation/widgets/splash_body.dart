@@ -25,7 +25,7 @@ class _SplashBodyState extends State<SplashBody> {
       });
     });
 
-    // Navigate to login page after 3 seconds
+    
     Future.delayed(const Duration(seconds: 3), () {
       Navigator.pushReplacement(
         context,
