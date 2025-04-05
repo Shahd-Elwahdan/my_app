@@ -11,8 +11,8 @@ class SplashBody extends StatefulWidget {
 }
 
 class _SplashBodyState extends State<SplashBody> {
-  double _size = 50.w; // Start small
-  double _opacity = 0.0; // Start invisible
+  double _size = 50.w; 
+  double _opacity = 0.0; 
 
   @override
   void initState() {
@@ -20,8 +20,8 @@ class _SplashBodyState extends State<SplashBody> {
 
     Future.delayed(const Duration(milliseconds: 500), () {
       setState(() {
-        _size = 200.w; // Expand size
-        _opacity = 1.0; // Fade in
+        _size = 200.w; 
+        _opacity = 1.0; 
       });
     });
 
@@ -42,7 +42,7 @@ class _SplashBodyState extends State<SplashBody> {
         height: double.infinity,
         decoration: const BoxDecoration(
           gradient: LinearGradient(
-            colors: [Color(0xFF035B97), Color(0xFF1D75B1)], // Gradient colors
+            colors: [Color(0xFF035B97), Color(0xFF1D75B1)], 
             begin: Alignment.topCenter,
             end: Alignment.bottomCenter,
           ),
