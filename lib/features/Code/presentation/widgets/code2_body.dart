@@ -92,15 +92,15 @@ class code2_body extends StatelessWidget {
                   child: TextField(
                     textAlign: TextAlign.center,
                     keyboardType: TextInputType.number,
-                    maxLength: 1, // Allow only one digit per box
+                    maxLength: 1,
                     style: TextStyle(
                       fontSize: 20,
                       fontWeight: FontWeight.bold,
-                      color: Colors.black, // Make text color black
+                      color: Colors.black, 
                     ),
                     decoration: InputDecoration(
                       border: InputBorder.none,
-                      counterText: "", // Hide the character counter
+                      counterText: "", 
                     ),
                   ),
                 );
@@ -158,7 +158,7 @@ class code2_body extends StatelessWidget {
                     style: GoogleFonts.almarai(
                       fontSize: 16.sp,
                       fontWeight: FontWeight.w700,
-                      color: Color(0xFF1D75B1), // Blue color to match design
+                      color: Color(0xFF1D75B1), 
                     ),
                   ),
                 ],
