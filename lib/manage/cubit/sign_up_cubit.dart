@@ -7,23 +7,19 @@ class SignupCubit extends Cubit<SignupState> {
 
   SignupCubit(this.apiService) : super(SignupInitial());
 
-  // Send OTP method
   Future<void> sendOtp(String email) async {
-    emit(SignupLoading()); // Show loading indicator
+    emit(SignupLoading()); 
     try {
-      // Call the API to send OTP
+      
       Response response = await apiService.sendOtp(email);
-
-      // Check the response status or data to confirm success
       if (response.statusCode == 200) {
-        emit(SignupSuccess()); // On success, emit success state
+        emit(SignupSuccess()); 
       } else {
-        emit(SignupFailure('Failed to send OTP')); // If the response status is not 200, emit failure state
+        emit(SignupFailure('Failed to send OTP')); 
       }
     } catch (e) {
-      emit(SignupFailure(e.toString())); // On error, emit failure state
+      emit(SignupFailure(e.toString()));
     }
   }
 
-// Other methods like signUp, verifyOtp, etc.
 }
